@@ -1,0 +1,33 @@
+results.txt
+=========================
+   KẾT QUẢ CHẠY THỬ
+=========================
+
+Input 1:
+Chuỗi tham chiếu: 7 0 1 2 0 3 0 4 2 3 0 3 2
+Số khung trang: 3
+
+Output 1:
+FIFO page faults: 9
+LRU page faults: 10
+Optimal page faults: 7
+-------------------------
+
+Input 2:
+Chuỗi tham chiếu: 1 2 3 4 1 2 5 1 2 3 4 5
+Số khung trang: 4
+
+Output 2:
+FIFO page faults: 10
+LRU page faults: 8
+Optimal page faults: 7
+-------------------------
+
+Input 3:
+Chuỗi tham chiếu: 0 1 2 3 4 0 1 2 5 0 1 2 3 4 5
+Số khung trang: 3
+
+Output 3:
+FIFO page faults: 12
+LRU page faults: 11
+Optimal page faults: 9
