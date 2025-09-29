@@ -20,7 +20,7 @@ Chương trình được viết bằng ngôn ngữ **C++**.
 ## 📌 Phân công công việc
 | Thành viên        | Công việc phụ trách                          | Đóng góp |
 |-------------------|----------------------------------------------|----------|
-| Ngô Chí Quyển     | Nhóm trưởng, tổng hợp, viết báo cáo, code chính | 100%     |
+| Ngô Chí Quyển     | Nhóm trưởng, tổng hợp, viết báo cáo, code chính,clock | 100%     |
 | Trần Trọng Nghĩa  | Thực hiện slide thuyết trình, hỗ trợ code LRU  | 95%      |
 | Đoàn Hoàng Hảo    | Tìm tài liệu, mô tả thuật toán FIFO, review code | 90%      |
 | Nguyễn Hải Duy    | Làm demo video, mô tả thuật toán Optimal       | 85%      |
