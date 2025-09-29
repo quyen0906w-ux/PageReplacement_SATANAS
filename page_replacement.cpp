@@ -37,7 +37,9 @@ void print_step(const vector<int>& frames, int cur_page, int step, bool hit) {
     }
     cout << (hit ? "  (HIT)" : "  (FAULT)") << '\n';
 }
-
+// Thuật toán FIFO (First In First Out): 
+// - Trang nào được nạp vào bộ nhớ sớm nhất sẽ bị thay thế trước. 
+// - Dùng queue để quản lý thứ tự các trang theo nguyên tắc vào trước ra trước.
 int simulate_fifo(const vector<int>& seq, int frames_count, bool verbose=true) {
     vector<int> frames(frames_count, INT_MIN);
     queue<int> q;
