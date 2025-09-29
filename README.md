@@ -31,3 +31,4 @@ Chương trình được viết bằng ngôn ngữ **C++**.
 1. Biên dịch code:
    ```bash
    g++ page_replacement.cpp -o page_replacement
+   dowload code về thêm thư viện và chạy
