@@ -63,7 +63,10 @@ int simulate_fifo(const vector<int>& seq, int frames_count, bool verbose=true) {
     }
     return faults;
 }
-
+// Thuật toán Optimal (OPT, MIN):
+// - Thay thế trang sẽ được sử dụng xa nhất trong tương lai.
+// - Nếu trang nào không còn được dùng nữa thì chọn ngay trang đó để thay.
+// - Đây là thuật toán lý tưởng, dùng để so sánh với các thuật toán khác.
 int simulate_opt(const vector<int>& seq, int frames_count, bool verbose=true) {
     vector<int> frames(frames_count, INT_MIN);
     int faults=0;
