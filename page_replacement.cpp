@@ -26,7 +26,13 @@ Notes for GitHub collaboration (add to README):
 
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <fstream>
+#include <iomanip>
+#include <climits>
 using namespace std;
 
 void print_step(const vector<int>& frames, int cur_page, int step, bool hit) {
