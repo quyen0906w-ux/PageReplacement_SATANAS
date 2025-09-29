@@ -92,7 +92,9 @@ int simulate_opt(const vector<int>& seq, int frames_count, bool verbose=true) {
     }
     return faults;
 }
-
+// Thuật toán LRU (Least Recently Used):
+// - Thay thế trang ít được sử dụng nhất trong quá khứ gần đây.
+// - Sử dụng biến thời gian (timestamp) hoặc stack/map để lưu lần truy cập cuối cùng.
 int simulate_lru(const vector<int>& seq, int frames_count, bool verbose=true) {
     vector<int> frames(frames_count, INT_MIN);
     unordered_map<int,int> last_used; // page -> time
@@ -125,7 +127,10 @@ int simulate_lru(const vector<int>& seq, int frames_count, bool verbose=true) {
     }
     return faults;
 }
-
+// Thuật toán Clock (Second Chance):
+// - Giả lập con trỏ xoay vòng qua các frame như kim đồng hồ.
+// - Trang có bit sử dụng (use bit) = 1 thì được "cho cơ hội thứ hai" (reset về 0).
+// - Nếu bit = 0 thì trang đó sẽ bị thay thế.
 int simulate_clock(const vector<int>& seq, int frames_count, bool verbose=true) {
     vector<int> frames(frames_count, INT_MIN);
     vector<int> use(frames_count,0);
