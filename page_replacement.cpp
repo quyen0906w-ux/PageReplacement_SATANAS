@@ -19,7 +19,7 @@ Example input:
 #include <fstream>
 #include <iomanip>
 #include <climits>
-
+#include <string>
 using namespace std;
 
 void print_step(const vector<int>& frames, int cur_page, int step, bool hit) {
